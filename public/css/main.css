@@ -1,0 +1,214 @@
+/*
+	VE Admin bootstrap Sass theme
+	Author: Vivek Pothagoni
+	Version: 0.0.1
+*/
+/* BASE-  Base styles, variables, mixins */
+body {
+  font-family: "Georgia", "Verdana", "Serif";
+  margin: 0 auto;
+  padding: 0px;
+  width: 960px; }
+
+/* LAYOUTS - Page layouts */
+.ve_footer {
+  height: 60px;
+  background-color: #286090;
+  text-align: center;
+  border-radius: 0px 0px 5px 5px;
+  padding: 10px; }
+  .ve_footer p {
+    color: white; }
+
+.ve_header {
+  height: 80px;
+  background-color: #286090;
+  padding: 10px;
+  border-radius: 5px 5px 0px 0px; }
+  .ve_header h3 {
+    color: white;
+    font-weight: bold; }
+  .ve_header .header-img {
+    display: inline;
+    float: left;
+    align-items: center;
+    margin-left: 60px; }
+    .ve_header .header-img img {
+      margin-top: 10px;
+      margin-right: 10px;
+      width: 45px;
+      height: 45px; }
+
+.ve_navbar {
+  height: 20px;
+  background-color: #eee;
+  border-width: 1px solid #286090; }
+
+.sidebar {
+  margin: 0px;
+  padding: 0px;
+  height: 520px;
+  background-color: #eee;
+  text-align: center; }
+  .sidebar ul {
+    list-style: none;
+    display: inline;
+    margin: 0px;
+    padding: 0px; }
+    .sidebar ul li {
+      margin-top: 5px;
+      line-height: 30px; }
+      .sidebar ul li:hover {
+        background-color: #286090; }
+      .sidebar ul li a {
+        font-size: 110%; }
+        .sidebar ul li a:hover {
+          color: white;
+          font-weight: bold; }
+
+.mainsection {
+  display: inline;
+  float: right; }
+
+.search-header input[type='text'] {
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 0px;
+  width: 150px;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -o-border-top-left-radius: 3px;
+  -o-border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
+.search-header button {
+  margin-left: 0px; }
+
+.pagenation {
+  margin-left: 5px;
+  margin-top: 5px; }
+
+.card-list {
+  width: 380px;
+  border: solid grey;
+  border-width: 1px;
+  box-shadow: 0px 2px 2px 0px;
+  margin-top: 5px;
+  margin-left: 5px; }
+  .card-list img {
+    width: 90px; }
+
+.submainsection {
+  display: inline;
+  float: left;
+  margin-right: 10px; }
+
+.detailedsection {
+  display: inline;
+  float: left;
+  margin-top: 40px;
+  margin-left: 65px;
+  border: solid grey;
+  border-width: 1px;
+  box-shadow: 0px 4px 4px 0px;
+  padding: 5px; }
+
+.details {
+  margin: 5px; }
+  .details .input-label {
+    float: left; }
+  .details .input-control {
+    float: left;
+    display: inline; }
+    .details .input-control textarea {
+      margin-left: 5px;
+      width: 340px;
+      -webkit-border-top-left-radius: 3px;
+      -webkit-border-top-right-radius: 3px;
+      -webkit-border-bottom-right-radius: 3px;
+      -webkit-border-bottom-left-radius: 3px;
+      -moz-border-radius-topleft: 3px;
+      -moz-border-radius-topright: 3px;
+      -moz-border-radius-bottomright: 3px;
+      -moz-border-radius-bottomleft: 3px;
+      -o-border-top-left-radius: 3px;
+      -o-border-top-right-radius: 3px;
+      -o-border-bottom-right-radius: 3px;
+      -o-border-bottom-left-radius: 3px;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-bottom-left-radius: 3px; }
+
+/* MODULES - Individual site components*/
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  background-color: #eee;
+  border-radius: 5px; }
+
+.form-signin .form-signin-heading,
+.form-signin {
+  margin-bottom: 10px; }
+
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px; }
+
+.form-signin .form-control:focus {
+  z-index: 2; }
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.signin-header .signin-header-img {
+  display: inline;
+  float: left;
+  padding-top: 22px;
+  padding-right: 10px; }
+.signin-header .signin-header-label {
+  display: inline;
+  float: left;
+  align-content: center; }
+.signin-header .form-signin-heading {
+  color: #286090;
+  font-weight: bold; }
+.signin-header img {
+  width: 24.5px;
+  height: 24.5px; }
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden; }
+
+.embed-responsive.embed-responsive-16by9 {
+  padding-bottom: 56.25%; }
+
+.embed-responsive-item {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0; }
+
+/*# sourceMappingURL=main.css.map */

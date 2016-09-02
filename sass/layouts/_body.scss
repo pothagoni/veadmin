@@ -1,0 +1,96 @@
+
+
+.sidebar{
+	margin: 0px;
+	padding: 0px;
+	height: 520px;
+	background-color: #eee;
+	text-align: center;
+	
+	ul{
+		list-style: none;
+		display: inline;
+		margin: 0px;
+		padding: 0px;
+		li{
+			margin-top: 5px;
+			line-height: 30px;
+			&:hover{
+				background-color: #286090;
+			}
+			a{
+				font-size: 110%;
+				&:hover {
+					color: white;
+					font-weight: bold;
+				}
+			}	
+		}
+	}
+	
+}
+.mainsection{
+	display: inline;
+	float: right;
+}
+.search-header{
+	input[type='text']{
+		margin-left: 20px;
+		margin-top: 10px;
+		margin-right: 0px;
+		width: 150px;
+		@include customBorderRadius(3px, 0px, 0px, 3px);
+		
+	}
+	button{
+		margin-left: 0px;
+	}
+}
+.pagenation{
+	margin-left: 5px;
+	margin-top: 5px;
+}
+.card-list{
+	width: 380px;
+	border: solid grey;
+	border-width: 1px;
+	box-shadow: 0px 2px 2px 0px;
+	margin-top: 5px;
+	margin-left: 5px;
+	img {
+		width: 90px;
+	}
+}
+.submainsection{
+	display: inline;
+	float: left;
+	margin-right: 10px;
+}
+.detailedsection{
+	display: inline;
+	float: left;
+	margin-top: 40px;
+  	margin-left: 65px;
+  	border: solid grey;
+	border-width: 1px;
+	box-shadow: 0px 4px 4px 0px;
+	padding: 5px;
+}
+.details{
+	margin: 5px;
+	
+	.input-label{
+		float: left;
+
+	}
+	.input-control{
+		float: left;
+		display: inline;
+		
+		textarea{
+			margin-left: 5px;
+			width: 340px;
+			@include customBorderRadius(3px, 3px, 3px, 3px);
+		}
+	}
+}

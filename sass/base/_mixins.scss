@@ -1,0 +1,24 @@
+$prefixes: -webkit-, -moz-, -o-, "";
+
+@mixin border-box($border-sizing-value) {
+	-webkit-box-sizing: $border-sizing-value;
+     -moz-box-sizing: $border-sizing-value;
+          box-sizing: $border-sizing-value;
+}
+
+@mixin customBorderRadius($topLeft: 0, $topRight: 0, $bottomRight: 0, $bottomLeft: 0) {
+    @each $prefix in $prefixes {
+        @if $prefix == "-moz-" {
+            @if $topLeft != 0 { -moz-border-radius-topleft: $topLeft; }
+            @if $topRight != 0 { -moz-border-radius-topright: $topRight; }
+            @if $bottomRight != 0 { -moz-border-radius-bottomright: $bottomRight; }
+            @if $bottomLeft != 0 { -moz-border-radius-bottomleft: $bottomLeft; }
+        } @else {
+            @if $topLeft != 0 { #{$prefix}border-top-left-radius: $topLeft; }
+            @if $topRight != 0 { #{$prefix}border-top-right-radius: $topRight; }
+            @if $bottomRight != 0 { #{$prefix}border-bottom-right-radius: $bottomRight; }
+            @if $bottomLeft != 0 { #{$prefix}border-bottom-left-radius: $bottomLeft; }
+        }
+    }
+}
+

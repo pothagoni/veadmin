@@ -1,0 +1,27 @@
+<div class="containter maincontainer">
+    <div id="header" class="row ve_header">
+        <div class="header-img">
+            <img src="img/ve_logo_90x90.png" />
+        </div>
+        <div class="header-title">
+            <h3>Vish Entertainment Administrator Tool</h3>
+        </div>
+    </div>
+
+    <div id="navbar" class="row ve_navbar"></div>
+   
+    <div id="main" class="row body">
+        <div id="sidebar" class="col-sm-2 sidebar">
+            <ul>
+                <li><a ui-sref="main.youtube">Youtube</a></li>
+                <li><a ui-sref="main.articles">Articles</a></li>
+                <li><a ui-sref="main.photos">Photos</a></li>
+            </ul>
+        </div>
+        <ui-view/>
+    </div>
+    
+    <div id="footer" class="row ve_footer">
+        <p>&copy; 2016 Vish Enterainment a Subsidary of Vish Technologies Inc.,<p>
+    </div>
+</div>

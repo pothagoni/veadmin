@@ -1,0 +1,28 @@
+<div class="col-sm-4 submainsection">
+	<div class="row search-header">
+		<input type="text" id="search" ng-model="searchKeyWord"/>
+		<button id="searchimg" ng-click="search()"><i class="fa fa-search fa-1g" aria-hidden="true"></i></button>
+
+		
+		<button ng-hide="showPrev()" id="searchimg" ng-click="previousPage()"><i class="fa fa-arrow-circle-left fa-1g" aria-hidden="true"></i></button>
+		<button ng-hide="showNext()" id="searchimg" ng-click="nextPage()"><i class="fa fa-arrow-circle-right fa-1g" aria-hidden="true"></i></button>
+	</div>
+	<div class="row card-list" ng-repeat="list in _list" ng-click="videoDetails(list)">
+		<div class="media">
+		  <div class="media-left media-middle">
+		    <img class="media-object" ng-src="{{list.snippet.thumbnails.high.url}}">
+		  </div>
+		  <div class="media-body">
+		  	<p>
+	    		{{list.snippet.description}}
+		    </p>
+		  </div>
+		</div>
+	</div>
+</div>
+<div class="col-sm-5 detailedsection" ng-show="showView()">
+	<ui-view/>
+</div>
+
+
+

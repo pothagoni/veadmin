@@ -1,0 +1,27 @@
+.ve_header{
+	height: 80px;
+	background-color: $primary-background-color;
+	
+	padding: 10px;
+	
+	border-radius: 5px 5px 0px 0px;
+
+	h3{
+		 color: white;
+    	font-weight: bold;
+	}
+	.header-img{
+
+		display: inline;
+		float: left;
+		align-items: center;
+		margin-left: 60px;
+		img{
+			margin-top:10px;
+			margin-right:10px;
+			width: 45px;
+			height: 45px;
+		}
+	}
+
+}

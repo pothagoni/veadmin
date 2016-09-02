@@ -1,0 +1,25 @@
+/*
+	VE Admin bootstrap Sass theme
+	Author: Vivek Pothagoni
+	Version: 0.0.1
+*/
+
+/* BASE-  Base styles, variables, mixins */
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_normalize.scss';
+@import 'base/_base.scss';
+
+
+/* LAYOUTS - Page layouts */
+@import 'layouts/_footer.scss';
+@import 'layouts/_header.scss';
+@import 'layouts/_nav.scss';
+@import 'layouts/_body.scss';
+
+/* MODULES - Individual site components*/
+@import 'modules/_blocks.scss';
+@import 'modules/_buttons.scss';
+@import 'modules/_components.scss';
+@import 'modules/_sections.scss';
+@import 'modules/_typography.scss';
