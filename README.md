@@ -1,6 +1,5 @@
-<snippet>
-  <content><![CDATA[
-# ${1:Vish Entertainment Admin Console}
+
+ Vish Entertainment Admin Console
 TODO: Application 
 
 ## Installation
@@ -23,7 +22,3 @@ TODO: Write usage instructions
 
 
 ## License
-Vish Technologies Inc
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
